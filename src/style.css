@@ -1,0 +1,94 @@
+/* src/style.css */
+
+/* Gradient background: bottom (#020204) to top (#3c3a47) */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(to top, #020204, #3c3a47);
+}
+
+/* Canvas container full screen */
+#canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent; /* ensures gradient is visible behind canvas */
+}
+
+/* Ensure canvas covers container with transparency */
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: transparent; /* ensures gradient shows through canvas */
+}
+
+/* Controls panel styling */
+#controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+#controls label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+#controls label:last-of-type {
+  margin-bottom: 0;
+}
+
+#controls input[type="range"] {
+  margin: 0 6px;
+  flex: 1;
+}
+
+#controls input[type="color"] {
+  margin-left: 6px;
+  border: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+#controls span {
+  min-width: 2em;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Stile per il bottone Switch Model */
+#switchModel {
+  display: block;
+  width: 100%;
+  padding: 6px 0;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #fff;
+  background: rgba(50, 50, 50, 0.8);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#switchModel:hover {
+  background: rgba(70, 70, 70, 0.9);
+}
