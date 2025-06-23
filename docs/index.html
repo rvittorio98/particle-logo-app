@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/assets/index-COoO_OFx.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Czc_1uw4.css">
+  </head>
+  <body>
+    <!-- Contenitore dove “monteremo” il canvas di Three.js -->
+    <div id="canvas-container"></div>
+
+    <!-- Pannello di controllo -->
+    <div id="controls">
+      <!-- Bottone per switchare il modello -->
+      <button id="switchModel">Switch Model</button>
+
+      <label>
+        Glow intensity:
+        <input id="glowSlider" type="range" min="0" max="1" step="0.01" value="0.50">
+        <span id="glowValue">0.50</span>
+      </label>
+      <label>
+        Particle size:
+        <input id="scaleSlider" type="range" min="1" max="10" step="0.1" value="1.0">
+        <span id="scaleValue">1.0</span>
+      </label>
+      <label>
+        Noise radius:
+        <input id="noiseRadiusSlider" type="range" min="0" max="100" step="1" value="50">
+        <span id="noiseRadiusValue">50</span>
+      </label>
+      <label>
+        Color:
+        <input id="colorPicker" type="color" value="#ffffff">
+      </label>
+      <label>
+        Background color:
+        <input id="bgPicker" type="color" value="#020204">
+      </label>
+    </div>
+
+    <!-- Punto di ingresso dello script (dopo tutti gli elementi) -->
+  </body>
+</html>
